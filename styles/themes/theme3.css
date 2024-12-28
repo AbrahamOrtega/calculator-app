@@ -1,0 +1,19 @@
+html[data-theme="theme3"] {
+  --background-main: hsl(268, 75%, 9%);
+  --background-keypad: hsl(268, 71%, 12%);
+  --background-screen: hsl(268, 71%, 12%);
+
+  --key-background: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
+
+  --key-background-special: hsl(281, 89%, 26%);
+  --key-shadow-special: hsl(285, 91%, 52%);
+
+  --key-background-toggle: hsl(176, 100%, 44%);
+  --key-shadow-toggle: hsl(177, 92%, 70%);
+
+  --text-title: hsl(52, 100%, 62%);
+  --text-key: hsl(52, 100%, 62%);
+  --text-key-special: hsl(0, 0%, 100%);
+  --text-key-equal: hsl(198, 20%, 13%);
+}
