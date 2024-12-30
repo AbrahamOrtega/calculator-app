@@ -22,5 +22,44 @@ html {
   --text-key-equal: hsl(0, 0%, 100%);
 }
 
+.keyButton {
+  background-color: var(--key-background);
+  box-shadow: inset 0 -4px var(--key-shadow);
+}
+
+.keyButton:hover {
+  background-color: var(--key-background);
+  filter: brightness(1.2);
+}
+
+.keyButtonSpecial {
+  color: var(--text-key-special);
+  background-color: var(--key-background-special);
+  box-shadow: inset 0 -4px var(--key-shadow-special);
+}
+.keyButtonSpecial:hover {
+  filter: brightness(1.2);
+}
+
+.keyButtonToggle {
+  color: var(--text-key-special);
+  background-color: var(--key-background-special);
+  box-shadow: inset 0 -4px var(--key-shadow-special);
+}
+
+.keyButtonToggle:hover {
+  filter: brightness(1.2);
+}
+
+.keyButtonEqual {
+  color: var(--text-key-equal);
+  background-color: var(--key-background-toggle);
+  box-shadow: inset 0 -4px var(--key-shadow-toggle);
+}
+
+.keyButtonEqual:hover {
+  filter: brightness(1.2);
+}
+
 @import "themes/theme2.css";
 @import "themes/theme3.css";

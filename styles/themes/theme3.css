@@ -3,8 +3,8 @@ html[data-theme="theme3"] {
   --background-keypad: hsl(268, 71%, 12%);
   --background-screen: hsl(268, 71%, 12%);
 
-  --key-background: hsl(45, 7%, 89%);
-  --key-shadow: hsl(35, 11%, 61%);
+  --key-background: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
 
   --key-background-special: hsl(281, 89%, 26%);
   --key-shadow-special: hsl(285, 91%, 52%);
