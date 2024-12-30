@@ -46,7 +46,7 @@ export default function Home() {
   }, [input, error]);
 
   return (
-    <div className="flex w-full min-h-screen justify-center items-center bg-backgroundMain">
+    <div className="flex w-full min-h-screen justify-center items-center bg-backgroundMain p-6 overflow-hidden">
       <div className="flex flex-col w-[500px] gap-y-6">
         <div className="flex w-full items-end justify-between">
           <h1 className="text-3xl text-textTitle">Calculator</h1>
