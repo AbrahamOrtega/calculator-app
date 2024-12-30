@@ -15,6 +15,9 @@ export default function Home() {
       setInput(key);
       return;
     }
+    if (key === "." && input.includes(".")) {
+      return;
+    }
     if (
       (/[+\-/x]$/.test(input.charAt(input.length - 1)) &&
         /[+\-/x]/.test(key)) ||
@@ -70,12 +73,9 @@ export default function Home() {
         </div>
         {/* Calculator Screen */}
         <div className="w-full h-full bg-backgroundScreen px-4 py-8 rounded-xl">
-          <input
-            type="text"
-            className="flex w-full outline-none bg-transparent text-[32px] text-right text-textTitle"
-            value={input || ""}
-            onChange={(e) => setInput(e.target.value)}
-          />
+          <p className="flex w-full bg-transparent text-[32px] justify-end text-textTitle">
+            {input}
+          </p>
         </div>
 
         {/* Calculator Buttons */}
