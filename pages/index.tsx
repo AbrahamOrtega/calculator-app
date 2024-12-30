@@ -72,8 +72,8 @@ export default function Home() {
           <ThemeSelector />
         </div>
         {/* Calculator Screen */}
-        <div className="w-full h-full bg-backgroundScreen px-4 py-8 rounded-xl">
-          <p className="flex w-full bg-transparent text-[32px] justify-end text-textTitle">
+        <div className="w-full h-full bg-backgroundScreen p-4 rounded-xl">
+          <p className="flex w-full bg-transparent text-[40px] justify-end text-textTitle">
             {input}
           </p>
         </div>
