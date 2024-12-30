@@ -2,21 +2,37 @@ import ThemeSelector from "@/components/ThemeSelector";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [input, setInput] = useState<string>("");
+  const [input, setInput] = useState<string>("0");
   const [error, setError] = useState<boolean>(false);
 
   const handleKeyClick = (key: string) => {
     if (error) {
-      setInput("");
+      setInput("0");
       setError(false);
+    }
+    if (input === "0") {
+      if (key === ".") return setInput("0.");
+      setInput(key);
+      return;
+    }
+    if (
+      (/[+\-/x]$/.test(input.charAt(input.length - 1)) &&
+        /[+\-/x]/.test(key)) ||
+      (input === "0" && /[+\-/x]/.test(key))
+    ) {
+      return;
     }
     setInput((prev) => prev + key);
   };
 
   const handleDeleteClick = () => {
     if (error) {
-      setInput("");
+      setInput("0");
       setError(false);
+      return;
+    }
+    if (input.length === 1) {
+      setInput("0");
       return;
     }
     setInput((prev) => prev?.slice(0, -1) || "");
@@ -24,7 +40,7 @@ export default function Home() {
 
   const handleEqualClick = () => {
     if (error) {
-      setInput("");
+      setInput("0");
       setError(false);
       return;
     }
@@ -166,7 +182,7 @@ export default function Home() {
 
           <button
             className="keyButtonToggle p-2 rounded-xl col-span-2"
-            onClick={() => setInput("")}
+            onClick={() => setInput("0")}
           >
             RESET
           </button>
