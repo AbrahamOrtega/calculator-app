@@ -34,4 +34,4 @@ Inicia el servidor
 
 ## Screenshots
 
-![Screenshot Home](https://time-tracking-dashboard.abrahamortegadev.software/screenshots/index.png)
+![Screenshot Home](https://calculator-app.abrahamortegadev.software/screenshots/index.png)
